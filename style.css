@@ -4,7 +4,7 @@
 
 body {
     margin: 0;
-    background: linear-gradient(30deg, rgb(33, 218, 180), rgb(93, 181, 255)) no-repeat center center fixed; 
+    background: no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;

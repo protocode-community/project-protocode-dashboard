@@ -1,17 +1,17 @@
 // Random Background Unsplash API
-fetch("https://api.unsplash.com/search/photos?client_id=YQGfP_TtcjaKTZzkz0uxSy4i-jxiqgu21vaVYbNQsMM")
+fetch(`https://api.unsplash.com/photos/random?client_id=${UNSPLASH_ACCESS_KEY}&query=tech,programming`)
     .then(res => res.json())
     .then(data => {
         console.log(data)
-        // document.body.style.backgroundImage = `url(${data.urls.regular})`
-		// document.getElementById("author").textContent = `By: ${data.user.name}`
+        document.body.style.background = `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+        rgba(0,0,0,0.3) url(${data.urls.regular}) center center / cover no-repeat`
+		document.getElementById("author").textContent = `Image by: ${data.user.name}`
     })
-//     .catch(err => {
-//         // Use a default background image/author
-//         document.body.style.backgroundImage = `url(https://images.unsplash.com/photo-1560008511-11c63416e52d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwyMTEwMjl8MHwxfHJhbmRvbXx8fHx8fHx8fDE2MjI4NDIxMTc&ixlib=rb-1.2.1&q=80&w=1080
-// )`
-// 		document.getElementById("author").textContent = `Image by: Dodi Achmad`
-//     })
+    .catch(err => {
+        // Use a default background image/author
+        document.body.style.background = "linear-gradient(30deg, rgb(33, 218, 180), rgb(93, 181, 255))"
+		document.getElementById("author").textContent = `Error fetching image`
+    })
     
 
 // Crypto API
