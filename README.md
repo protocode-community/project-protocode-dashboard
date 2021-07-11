@@ -39,9 +39,9 @@ This project follows the Contributor Covenant Code of Conduct [![Contributor Cov
 All contributions are viewable here: https://protocode-community.github.io/project-protocode-dashboard/
 You may add your name and contribution below:
 
-|username|project|
+|username|contribution|
 |--------|-------|
-|prototowb|initial setup :)|
+|prototowb|initial setup|
 
 ## License
 [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/) © protocode
