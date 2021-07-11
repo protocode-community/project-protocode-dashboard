@@ -1,4 +1,7 @@
 // Random Background Unsplash API
+// ! Set your ACCESS KEY here, or the extension won't work
+const UNSPLASH_ACCESS_KEY = "";
+
 fetch(`https://api.unsplash.com/photos/random?client_id=${UNSPLASH_ACCESS_KEY}&query=tech,programming`)
     .then(res => res.json())
     .then(data => {
