@@ -27,11 +27,11 @@ The goals for this repository are:
 Feel free to dive right in! Fork this repo, add your feature and submit your feature-branch for a Pull Requests or contribute to possible issues.
 
 In general you can: 
-- Reporting a bug
-- Discussing the current state of the code
-- Submitting a fix
-- Proposing new features
-- Becoming a maintainer
+- Report a bug
+- Discuss the current state of the code
+- Submit a fix
+- Propose new features
+- Become a maintainer
 
 This project follows the Contributor Covenant Code of Conduct [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.0-4baaaa.svg)](code_of_conduct.md).
 
