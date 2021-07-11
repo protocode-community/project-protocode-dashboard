@@ -16,7 +16,7 @@ The goals for this repository are:
 4. Building your GitHub activity & contribution Profile to showcase what you achieved since starting your dev journey. 
 
 ## Usage
-- For now, either comment out the unsplash API call, or paste your ACCESS KEY - and don't forget to remove it before pushing to git. We looking for a way to make a public call or maybe set up a dot-env to work with environment variables. 
+- For now, either comment out the unsplash API call, or paste your ACCESS KEY - and don't forget to remove it before pushing to git. We are looking for a way to make a public call or maybe set up dot-env to work with environment variables. 
 - In your chrome browser go to chrome://extensions and 'load unpacked files' from your project directory (or a duplicate).
 - It should work now - Open a new tab - allow location for weather API.
 
