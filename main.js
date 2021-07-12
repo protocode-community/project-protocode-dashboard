@@ -1,21 +1,19 @@
 // Random Background Unsplash API
-// ! Set your ACCESS KEY here, or the extension won't work
-const UNSPLASH_ACCESS_KEY = "";
-
-fetch(`https://api.unsplash.com/photos/random?client_id=${UNSPLASH_ACCESS_KEY}&query=tech,programming`)
-    .then(res => res.json())
+fetch(`https://source.unsplash.com/1920x1080/?tech,programming`)
+    // .then(res => res.json())
     .then(data => {
         console.log(data)
         document.body.style.background = `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-        rgba(0,0,0,0.3) url(${data.urls.regular}) center center / cover no-repeat`
-		document.getElementById("author").textContent = `Image by: ${data.user.name}`
+        rgba(0,0,0,0.3) url(${data.url}) center center / cover no-repeat`
+        // document.getElementById("author").textContent = `Image by: ${data.user.name}`
     })
     .catch(err => {
-        // Use a default background image/author
-        document.body.style.background = "linear-gradient(30deg, rgb(33, 218, 180), rgb(93, 181, 255))"
-		document.getElementById("author").textContent = `Error fetching image`
+        console.log(err.message)
+        // Use a default background/author
+        // document.body.style.background = "linear-gradient(30deg, rgb(33, 218, 180), rgb(93, 181, 255))"
+        document.getElementById("author").textContent = `Error fetching data`
     })
-    
+
 
 // Crypto API
 fetch("https://api.coingecko.com/api/v3/coins/skale")
@@ -40,7 +38,7 @@ fetch("https://api.coingecko.com/api/v3/coins/skale")
 
 function getCurrentTime() {
     const date = new Date()
-    document.getElementById("time").textContent = date.toLocaleTimeString("en-us", {timeStyle: "short"})
+    document.getElementById("time").textContent = date.toLocaleTimeString("en-us", { timeStyle: "short" })
 }
 
 // Location & Time API
